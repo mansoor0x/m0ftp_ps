@@ -1,46 +1,37 @@
 # m0ftp-ps - FTP Manager for PS4
 
-![m0ftp-ps](screenshots/logo.png)
-
-> أداة FTP احترافية مفتوحة المصدر لإدارة ملفات PS4 بواجهة أنيقة (داركر مود) مع دعم ثلاث لغات: العربية، الإسبانية، الإنجليزية.
-
-![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+An open-source FTP client application designed for managing files on PlayStation 4 (PS4) systems.  
+Built with Python and Tkinter, it provides a clean dark-mode interface and supports multilingual translations (Arabic, Spanish, English).
 
 ---
 
-## ✨ المميزات
+## Features
 
-- **اتصال سهل بخادم FTP** (يدعم PS4 وغيره).
-
-- **ترجمة فورية** بين العربية، الإسبانية، والإنجليزية.
-- **عمليات الملفات الأساسية**: رفع، تحميل، حذف، إعادة تسمية، إنشاء مجلد.
-- **شريط تقدم** يعرض نسبة الإنجاز أثناء الرفع/التحميل.
-- **انتقال سريع** إلى المسار `/data` الخاص بـ PS4.
-- **قائمة سياق** بالنقر بزر الماوس الأيمن.
-
----
-
-## 🖥️ لقطات الشاشة
-
-| النافذة الرئيسية | نافذة الاتصال |
-|------------------|---------------|
-| ![الرئيسية](screenshots/main.png) | ![الاتصال](screenshots/connect.png) |
-
-| رفع ملف | تحميل ملف |
-|---------|-----------|
-| ![رفع](screenshots/upload.png) | ![تحميل](screenshots/download.png) |
+- FTP connection to PS4 or any standard FTP server.
+- Dark theme UI with alternating row colors for better readability.
+- Internationalisation: Arabic, Spanish, and English (switchable at runtime).
+- Core file operations: upload, download, delete, rename, create directory.
+- Real-time progress bar for upload/download operations.
+- Quick navigation to common PS4 paths (e.g., `/data`).
+- Context menu (right-click) for rapid actions.
+- Keyboard shortcuts: `Ctrl+O` for connection, `F5` for refresh.
 
 ---
 
-## 🚀 كيفية التثبيت والتشغيل
+## Requirements
 
-### المتطلبات
-- Python 3.6 أو أحدث.
-- لا حاجة لمكتبات إضافية (كل شيء مدمج في Python).
+- Python 3.6 or higher.
+- No external dependencies; uses built-in modules:
+  - `tkinter`
+  - `ftplib`
+  - `os`, `threading`, `datetime`
 
-### الخطوات
-1. **استنساخ المستودع**:
+---
+
+## Installation and Execution
+
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/m0ftp-ps.git
    cd m0ftp-ps
